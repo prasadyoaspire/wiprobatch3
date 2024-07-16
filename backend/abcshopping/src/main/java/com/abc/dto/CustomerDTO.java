@@ -1,8 +1,6 @@
 package com.abc.dto;
 
 import java.time.LocalDate;
-import java.util.Set;
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -17,7 +15,6 @@ public class CustomerDTO {
 	private LocalDate dob;
 	private String mobile;
 	private String email;
-	private String city;	
-	private Set<OrderDTO> orders;
+	private String city;
 	
 }

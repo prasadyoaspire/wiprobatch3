@@ -7,7 +7,7 @@ import com.abc.dto.CustomerDTO;
 
 public interface CustomerService {
 
-	CustomerDTO saveCustomer(CustomerDTO customer);
+	CustomerDTO saveCustomer(CustomerDTO customerDTO);
 	
 	CustomerDTO findCustomerById(long customerId);
 	
