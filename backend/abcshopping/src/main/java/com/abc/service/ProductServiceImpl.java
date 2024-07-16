@@ -1,7 +1,9 @@
 package com.abc.service;
 
+import java.util.List;
 import java.util.Optional;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -53,8 +55,9 @@ public class ProductServiceImpl implements ProductService {
 
 	@Override
 	public Set<ProductDTO> findAllProducts() {
-		// TODO Auto-generated method stub
-		return null;
+	
+		List<Product> products = productRepository.findAll();
+		return products.stream().map(product -> modelMapper.map(product, ProductDTO.class)).collect(Collectors.toSet());
 	}
 
 }

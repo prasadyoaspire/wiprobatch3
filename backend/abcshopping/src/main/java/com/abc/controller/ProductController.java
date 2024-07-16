@@ -1,5 +1,7 @@
 package com.abc.controller;
 
+import java.util.Set;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -34,5 +36,13 @@ public class ProductController {
 		ProductDTO productDTO = productService.findProductById(productId);
 		
 		return new ResponseEntity<>(productDTO,HttpStatus.OK);
+	}
+	
+	@GetMapping("/")
+	public ResponseEntity<Set<ProductDTO>> fetchAllProducts() {
+		
+		Set<ProductDTO> products = productService.findAllProducts();
+		
+		return new ResponseEntity<>(products,HttpStatus.OK);
 	}
 }
