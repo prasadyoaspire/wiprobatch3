@@ -2,7 +2,10 @@ package com.abc.order.service;
 
 import java.time.LocalDate;
 import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Optional;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +18,7 @@ import com.abc.order.dto.OrderItemDTO;
 import com.abc.order.dto.ProductDTO;
 import com.abc.order.entity.Order;
 import com.abc.order.entity.OrderItem;
+import com.abc.order.exception.ResourceNotFoundException;
 import com.abc.order.repository.OrderRepository;
 
 @Service
@@ -74,6 +78,7 @@ public class OrderServiceImpl implements OrderService {
 			orderItem.setItemTotal(itemDTO.getItemTotal());
 			orderItem.setProductId(itemDTO.getProductId());
 			orderItem.setQuantity(itemDTO.getQuantity());
+			
 			orderItem.setOrder(order);
 
 			orderItems.add(orderItem);
@@ -91,14 +96,24 @@ public class OrderServiceImpl implements OrderService {
 
 	@Override
 	public OrderDTO findOrderById(long orderId) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		Optional<Order> optionalOrder = orderRepository.findById(orderId);
+		if(optionalOrder.isEmpty()) {
+			throw new ResourceNotFoundException("Order not found");
+		}
+		Order order = optionalOrder.get();
+		
+		return modelMapper.map(order, OrderDTO.class);
 	}
 
 	@Override
 	public Set<OrderDTO> findAllOrdersByCustomer(long customerId) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		List<Order> orders = orderRepository.findOrderByCustomerId(customerId);
+		
+		Set<OrderDTO> orderDTOs = orders.stream().map(order-> modelMapper.map(order, OrderDTO.class)).collect(Collectors.toSet());
+		
+		return orderDTOs;
 	}
 
 }
