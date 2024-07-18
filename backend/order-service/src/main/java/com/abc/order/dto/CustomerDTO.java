@@ -1,5 +1,7 @@
 package com.abc.order.dto;
 
+import java.time.LocalDate;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,10 +11,12 @@ import lombok.Setter;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class OrderItemDTO {
-
+public class CustomerDTO {
+	
 	private long id;
-	private double itemTotal;
-	private int quantity;
-	private ProductDTO product;
+	private String customerName;
+	private LocalDate dob;
+	private String mobile;
+	private String email;
+	private String city;
 }

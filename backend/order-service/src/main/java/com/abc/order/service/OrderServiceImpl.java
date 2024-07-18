@@ -13,6 +13,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+import com.abc.order.dto.CustomerDTO;
 import com.abc.order.dto.OrderDTO;
 import com.abc.order.dto.OrderItemDTO;
 import com.abc.order.dto.ProductDTO;
@@ -29,12 +30,18 @@ public class OrderServiceImpl implements OrderService {
 
 	@Autowired
 	private ModelMapper modelMapper;
-
+	
 	@Autowired
-	private RestTemplate restTemplate;
+	private ProductApiClient productApiClient;
+	
+	@Autowired
+	private CustomerApiClient customerApiClient;
+
+//	@Autowired
+//	private RestTemplate restTemplate;
 
 	@Override
-	public OrderDTO saveOrder(OrderDTO orderDTO) {
+	public String saveOrder(OrderDTO orderDTO) {
 
 		Set<OrderItemDTO> orderItemDTOs = orderDTO.getOrderItems();
 
@@ -43,13 +50,16 @@ public class OrderServiceImpl implements OrderService {
 		for (OrderItemDTO orderItemDTO : orderItemDTOs) {
 
 			int qty = orderItemDTO.getQuantity();
-			long productId = orderItemDTO.getProductId();
+			long productId = orderItemDTO.getProduct().getId();
 
 			// get the product details
-			ResponseEntity<ProductDTO> responseEntity = restTemplate
-					.getForEntity("http://localhost:8082/product/" + productId, ProductDTO.class);
-
-			ProductDTO productDTO = responseEntity.getBody();
+//			ResponseEntity<ProductDTO> responseEntity = restTemplate
+//					.getForEntity("http://localhost:8082/product/" + productId, ProductDTO.class);
+//
+//			ProductDTO productDTO = responseEntity.getBody();
+			
+			ProductDTO productDTO = productApiClient.fetchProductDetails(productId);
+			
 
 			double itemTotal = qty * productDTO.getProductPrice();
 
@@ -69,14 +79,14 @@ public class OrderServiceImpl implements OrderService {
 		order.setOrderAmount(orderDTO.getOrderAmount());
 		order.setOrderDate(orderDTO.getOrderDate());
 		order.setOrderStatus(orderDTO.getOrderStatus());
-		order.setCustomerId(orderDTO.getCustomerId());
+		order.setCustomerId(orderDTO.getCustomer().getId());
 
 		Set<OrderItem> orderItems = new LinkedHashSet<>();
 
 		for (OrderItemDTO itemDTO : orderItemDTOs) {
 			OrderItem orderItem = new OrderItem();
 			orderItem.setItemTotal(itemDTO.getItemTotal());
-			orderItem.setProductId(itemDTO.getProductId());
+			orderItem.setProductId(itemDTO.getProduct().getId());
 			orderItem.setQuantity(itemDTO.getQuantity());
 			
 			orderItem.setOrder(order);
@@ -86,12 +96,9 @@ public class OrderServiceImpl implements OrderService {
 
 		order.setOrderItems(orderItems);
 
-		orderRepository.save(order);
+		orderRepository.save(order);		
 
-		// convert entity to dto
-		OrderDTO newOrder = modelMapper.map(order, OrderDTO.class);
-
-		return newOrder;
+		return "Order Successfully Placed";
 	}
 
 	@Override
@@ -103,7 +110,21 @@ public class OrderServiceImpl implements OrderService {
 		}
 		Order order = optionalOrder.get();
 		
-		return modelMapper.map(order, OrderDTO.class);
+		OrderDTO orderDTO =  modelMapper.map(order, OrderDTO.class);		
+				
+		CustomerDTO customerDTO = customerApiClient.getCustomerDetails(orderDTO.getCustomer().getId());
+		orderDTO.setCustomer(customerDTO);
+		
+		Set<OrderItemDTO> orderItemDtos = orderDTO.getOrderItems();
+		
+		for(OrderItemDTO item : orderItemDtos) {
+			ProductDTO productDTO = productApiClient.fetchProductDetails(item.getProduct().getId());
+			item.setProduct(productDTO);
+		}
+		
+		orderDTO.setOrderItems(orderItemDtos);
+		
+		return orderDTO;
 	}
 
 	@Override
