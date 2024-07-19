@@ -22,6 +22,8 @@ import com.abc.order.entity.OrderItem;
 import com.abc.order.exception.ResourceNotFoundException;
 import com.abc.order.repository.OrderRepository;
 
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
+
 @Service
 public class OrderServiceImpl implements OrderService {
 
@@ -30,12 +32,14 @@ public class OrderServiceImpl implements OrderService {
 
 	@Autowired
 	private ModelMapper modelMapper;
-	
+
 	@Autowired
 	private ProductApiClient productApiClient;
-	
+
 	@Autowired
 	private CustomerApiClient customerApiClient;
+	
+	private int attempts;
 
 //	@Autowired
 //	private RestTemplate restTemplate;
@@ -57,24 +61,21 @@ public class OrderServiceImpl implements OrderService {
 //					.getForEntity("http://localhost:8082/product/" + productId, ProductDTO.class);
 //
 //			ProductDTO productDTO = responseEntity.getBody();
-			
+
 			ProductDTO productDTO = productApiClient.fetchProductDetails(productId);
-			
 
 			double itemTotal = qty * productDTO.getProductPrice();
 
 			orderItemDTO.setItemTotal(itemTotal);// we need to set the item total (productPrice * qty)
 
 			orderAmount = orderAmount + itemTotal;
-
 		}
 
 		orderDTO.setOrderAmount(orderAmount);
 		orderDTO.setOrderDate(LocalDate.now());
 		orderDTO.setOrderStatus("Success");
 
-		//convert dto to entity
-
+		// convert dto to entity
 		Order order = new Order();
 		order.setOrderAmount(orderDTO.getOrderAmount());
 		order.setOrderDate(orderDTO.getOrderDate());
@@ -88,7 +89,7 @@ public class OrderServiceImpl implements OrderService {
 			orderItem.setItemTotal(itemDTO.getItemTotal());
 			orderItem.setProductId(itemDTO.getProduct().getId());
 			orderItem.setQuantity(itemDTO.getQuantity());
-			
+
 			orderItem.setOrder(order);
 
 			orderItems.add(orderItem);
@@ -96,44 +97,46 @@ public class OrderServiceImpl implements OrderService {
 
 		order.setOrderItems(orderItems);
 
-		orderRepository.save(order);		
+		orderRepository.save(order);
 
 		return "Order Successfully Placed";
 	}
 
 	@Override
 	public OrderDTO findOrderById(long orderId) {
-		
+
 		Optional<Order> optionalOrder = orderRepository.findById(orderId);
-		if(optionalOrder.isEmpty()) {
+		if (optionalOrder.isEmpty()) {
 			throw new ResourceNotFoundException("Order not found");
 		}
 		Order order = optionalOrder.get();
-		
-		OrderDTO orderDTO =  modelMapper.map(order, OrderDTO.class);		
-				
+
+		OrderDTO orderDTO = modelMapper.map(order, OrderDTO.class);
+
+		System.out.println("No of attempts : "+attempts++ +" at "+new java.util.Date());
 		CustomerDTO customerDTO = customerApiClient.getCustomerDetails(orderDTO.getCustomer().getId());
 		orderDTO.setCustomer(customerDTO);
-		
+
 		Set<OrderItemDTO> orderItemDtos = orderDTO.getOrderItems();
-		
-		for(OrderItemDTO item : orderItemDtos) {
+
+		for (OrderItemDTO item : orderItemDtos) {
 			ProductDTO productDTO = productApiClient.fetchProductDetails(item.getProduct().getId());
 			item.setProduct(productDTO);
 		}
-		
+
 		orderDTO.setOrderItems(orderItemDtos);
-		
+
 		return orderDTO;
 	}
 
 	@Override
 	public Set<OrderDTO> findAllOrdersByCustomer(long customerId) {
-		
+
 		List<Order> orders = orderRepository.findOrderByCustomerId(customerId);
-		
-		Set<OrderDTO> orderDTOs = orders.stream().map(order-> modelMapper.map(order, OrderDTO.class)).collect(Collectors.toSet());
-		
+
+		Set<OrderDTO> orderDTOs = orders.stream().map(order -> modelMapper.map(order, OrderDTO.class))
+				.collect(Collectors.toSet());
+
 		return orderDTOs;
 	}
 

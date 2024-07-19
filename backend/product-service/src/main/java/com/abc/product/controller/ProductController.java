@@ -3,6 +3,7 @@ package com.abc.product.controller;
 import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,6 +23,9 @@ public class ProductController {
 	@Autowired
 	private ProductService productService;
 	
+	@Autowired
+	private Environment env;
+	
 	@PostMapping("/")
 	public ResponseEntity<ProductDTO> addProduct(@RequestBody ProductDTO productDTO) {
 		
@@ -32,6 +36,8 @@ public class ProductController {
 	
 	@GetMapping("/{productId}")
 	public ResponseEntity<ProductDTO> fetchProductDetails(@PathVariable long productId) {
+		
+		System.out.println("Product-service running on port number: "+env.getProperty("local.server.port"));
 		
 		ProductDTO productDTO = productService.findProductById(productId);
 		
