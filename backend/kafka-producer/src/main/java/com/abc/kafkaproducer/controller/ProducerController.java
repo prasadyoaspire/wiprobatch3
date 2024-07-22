@@ -20,11 +20,11 @@ public class ProducerController {
 	@Autowired
 	private ProducerService producerService;
 	
-//	@GetMapping("/send")
-//	public ResponseEntity<String> publishMessage(@RequestParam String message) {
-//		producerService.sendMsg(message);
-//		return new ResponseEntity<>("Message sent",HttpStatus.OK);
-//	}
+	@GetMapping("/send")
+	public ResponseEntity<String> publishMessage(@RequestParam String message) {
+		producerService.sendMsg(message);
+		return new ResponseEntity<>("Message sent",HttpStatus.OK);
+	}
 	
 	@PostMapping("/customer")
 	public ResponseEntity<String> publishCustomerMsg(@RequestBody Customer customer) {

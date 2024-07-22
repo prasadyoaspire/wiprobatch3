@@ -8,15 +8,18 @@ import com.abc.kafkaproducer.model.Customer;
 
 @Service
 public class ProducerService {
+	
+	@Autowired
+	private KafkaTemplate<String,String> kafkaTemplate;
 
 	@Autowired
-	private KafkaTemplate<String,Customer> kafkaTemplate;
+	private KafkaTemplate<String,Customer> customerkafkaTemplate;
 	
-//	public void sendMsg(String msg) {
-//		kafkaTemplate.send("demo-topic",msg);
-//	}
+	public void sendMsg(String msg) {
+		kafkaTemplate.send("demo-topic",msg);
+	}
 	
 	public void sendCustomer(Customer customer) {
-		kafkaTemplate.send("test-topic", customer);
+		customerkafkaTemplate.send("test-topic", customer);
 	}
 }
