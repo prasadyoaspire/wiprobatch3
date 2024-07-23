@@ -1,0 +1,302 @@
+2024-07-23T10:07:39.069+05:30  INFO 22432 --- [stock-service] [restartedMain] com.abc.stock.StockServiceApplication    : Starting StockServiceApplication using Java 17.0.11 with PID 22432 (D:\trainings\wipro\batch2\stsworkspace3\stock-service\target\classes started by DELL in D:\trainings\wipro\batch2\stsworkspace3\stock-service)
+2024-07-23T10:07:39.069+05:30  INFO 22432 --- [stock-service] [restartedMain] com.abc.stock.StockServiceApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-07-23T10:07:39.433+05:30  INFO 22432 --- [stock-service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=851132c8-f0d1-3be8-8ad9-cf970a4249b9
+2024-07-23T10:07:39.446+05:30  WARN 22432 --- [stock-service] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-07-23T10:07:39.447+05:30  WARN 22432 --- [stock-service] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-07-23T10:07:39.551+05:30  INFO 22432 --- [stock-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2024-07-23T10:07:39.552+05:30  INFO 22432 --- [stock-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-23T10:07:39.552+05:30  INFO 22432 --- [stock-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-23T10:07:39.593+05:30  INFO 22432 --- [stock-service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-23T10:07:39.593+05:30  INFO 22432 --- [stock-service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 522 ms
+2024-07-23T10:07:39.719+05:30  WARN 22432 --- [stock-service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-07-23T10:07:40.920+05:30  INFO 22432 --- [stock-service] [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2024-07-23T10:07:42.104+05:30  INFO 22432 --- [stock-service] [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2024-07-23T10:07:42.115+05:30  INFO 22432 --- [stock-service] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-07-23T10:07:42.127+05:30  WARN 22432 --- [stock-service] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-07-23T10:07:42.152+05:30  INFO 22432 --- [stock-service] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-07-23T10:07:42.156+05:30  INFO 22432 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-07-23T10:07:42.156+05:30  INFO 22432 --- [stock-service] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-07-23T10:07:42.158+05:30  INFO 22432 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-07-23T10:07:42.158+05:30  INFO 22432 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-07-23T10:07:42.158+05:30  INFO 22432 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-07-23T10:07:42.158+05:30  INFO 22432 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-07-23T10:07:42.158+05:30  INFO 22432 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-07-23T10:07:42.158+05:30  INFO 22432 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-07-23T10:07:42.158+05:30  INFO 22432 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-07-23T10:07:42.205+05:30  INFO 22432 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-07-23T10:07:42.207+05:30  INFO 22432 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-07-23T10:07:42.207+05:30  INFO 22432 --- [stock-service] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-07-23T10:07:42.209+05:30  INFO 22432 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1721709462209 with initial instances count: 3
+2024-07-23T10:07:42.212+05:30  INFO 22432 --- [stock-service] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application STOCK-SERVICE with eureka with status UP
+2024-07-23T10:07:42.212+05:30  INFO 22432 --- [stock-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1721709462212, current=UP, previous=STARTING]
+2024-07-23T10:07:42.213+05:30  INFO 22432 --- [stock-service] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STOCK-SERVICE/localhost:stock-service:8082: registering service...
+2024-07-23T10:07:42.242+05:30  INFO 22432 --- [stock-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path ''
+2024-07-23T10:07:42.243+05:30  INFO 22432 --- [stock-service] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+2024-07-23T10:07:42.265+05:30  INFO 22432 --- [stock-service] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STOCK-SERVICE/localhost:stock-service:8082 - registration status: 204
+2024-07-23T10:07:43.491+05:30  INFO 22432 --- [stock-service] [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2024-07-23T10:07:43.492+05:30  INFO 22432 --- [stock-service] [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-stock-3
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = stock
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2024-07-23T10:07:43.498+05:30  INFO 22432 --- [stock-service] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.6.2
+2024-07-23T10:07:43.498+05:30  INFO 22432 --- [stock-service] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c4deed513057c94e
+2024-07-23T10:07:43.498+05:30  INFO 22432 --- [stock-service] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1721709463497
+2024-07-23T10:07:43.498+05:30  INFO 22432 --- [stock-service] [restartedMain] fkaConsumerFactory$ExtendedKafkaConsumer : [Consumer clientId=consumer-stock-3, groupId=stock] Subscribed to topic(s): order_topics
+2024-07-23T10:07:43.503+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node -1 disconnected.
+2024-07-23T10:07:43.503+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:07:43.503+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:07:43.510+05:30  INFO 22432 --- [stock-service] [restartedMain] com.abc.stock.StockServiceApplication    : Started StockServiceApplication in 5.703 seconds (process running for 938.793)
+2024-07-23T10:07:43.512+05:30  INFO 22432 --- [stock-service] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-07-23T10:07:43.617+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node -1 disconnected.
+2024-07-23T10:07:43.618+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:07:43.618+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:07:43.807+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node -1 disconnected.
+2024-07-23T10:07:43.807+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:07:43.807+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:07:43.978+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node -1 disconnected.
+2024-07-23T10:07:43.979+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:07:43.979+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:07:44.460+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node -1 disconnected.
+2024-07-23T10:07:44.460+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:07:44.460+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:07:45.189+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node -1 disconnected.
+2024-07-23T10:07:45.189+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:07:45.189+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:07:46.437+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node -1 disconnected.
+2024-07-23T10:07:46.437+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:07:46.437+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:07:47.489+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node -1 disconnected.
+2024-07-23T10:07:47.491+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:07:47.491+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:07:48.492+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node -1 disconnected.
+2024-07-23T10:07:48.492+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:07:48.492+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:07:49.598+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node -1 disconnected.
+2024-07-23T10:07:49.598+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:07:49.598+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:07:50.517+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node -1 disconnected.
+2024-07-23T10:07:50.517+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:07:50.517+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:07:51.512+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node -1 disconnected.
+2024-07-23T10:07:51.512+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:07:51.512+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:07:52.510+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node -1 disconnected.
+2024-07-23T10:07:52.514+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:07:52.514+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:07:53.491+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node -1 disconnected.
+2024-07-23T10:07:53.491+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:07:53.491+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:07:54.408+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node -1 disconnected.
+2024-07-23T10:07:54.408+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:07:54.408+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:07:55.268+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node -1 disconnected.
+2024-07-23T10:07:55.268+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:07:55.268+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:07:56.246+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node -1 disconnected.
+2024-07-23T10:07:56.246+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:07:56.246+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:07:57.351+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node -1 disconnected.
+2024-07-23T10:07:57.351+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:07:57.351+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:07:58.333+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node -1 disconnected.
+2024-07-23T10:07:58.333+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:07:58.333+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:07:59.269+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node -1 disconnected.
+2024-07-23T10:07:59.269+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:07:59.269+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:08:00.370+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node -1 disconnected.
+2024-07-23T10:08:00.370+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:08:00.370+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:08:01.293+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node -1 disconnected.
+2024-07-23T10:08:01.293+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:08:01.293+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:08:02.397+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node -1 disconnected.
+2024-07-23T10:08:02.398+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:08:02.398+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:08:03.591+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node -1 disconnected.
+2024-07-23T10:08:03.592+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:08:03.592+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:08:04.450+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node -1 disconnected.
+2024-07-23T10:08:04.450+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:08:04.452+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:08:05.556+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node -1 disconnected.
+2024-07-23T10:08:05.556+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:08:05.556+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:08:06.679+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Error while fetching metadata with correlation id 2 : {order_topics=LEADER_NOT_AVAILABLE}
+2024-07-23T10:08:06.679+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-stock-3, groupId=stock] Cluster ID: XrR8YNZ1R_2wZmgLQo900w
+2024-07-23T10:08:06.804+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Error while fetching metadata with correlation id 5 : {order_topics=LEADER_NOT_AVAILABLE}
+2024-07-23T10:08:06.924+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Error while fetching metadata with correlation id 7 : {order_topics=LEADER_NOT_AVAILABLE}
+2024-07-23T10:08:07.050+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-stock-3, groupId=stock] Discovered group coordinator 192.168.1.37:9092 (id: 2147483647 rack: null)
+2024-07-23T10:08:07.053+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-stock-3, groupId=stock] (Re-)joining group
+2024-07-23T10:08:07.075+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-stock-3, groupId=stock] JoinGroup failed: Coordinator 192.168.1.37:9092 (id: 2147483647 rack: null) is loading the group.
+2024-07-23T10:08:07.075+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-stock-3, groupId=stock] Request joining group due to: rebalance failed due to 'The coordinator is loading and hence can't process requests.' (CoordinatorLoadInProgressException)
+2024-07-23T10:08:07.175+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-stock-3, groupId=stock] (Re-)joining group
+2024-07-23T10:08:07.195+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-stock-3, groupId=stock] Request joining group due to: need to re-join with the given member-id: consumer-stock-3-e3af3401-d8d2-4c91-bc45-5bff752e2a44
+2024-07-23T10:08:07.195+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-stock-3, groupId=stock] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2024-07-23T10:08:07.195+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-stock-3, groupId=stock] (Re-)joining group
+2024-07-23T10:08:20.310+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node -1 disconnected.
+2024-07-23T10:08:20.312+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node 0 disconnected.
+2024-07-23T10:08:20.312+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Cancelled in-flight METADATA request with correlation id 15 due to node 0 being disconnected (elapsed time since creation: 2ms, elapsed time since send: 2ms, request timeout: 30000ms)
+2024-07-23T10:08:20.312+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node 2147483647 disconnected.
+2024-07-23T10:08:20.312+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Cancelled in-flight JOIN_GROUP request with correlation id 14 due to node 2147483647 being disconnected (elapsed time since creation: 13116ms, elapsed time since send: 13117ms, request timeout: 305000ms)
+2024-07-23T10:08:20.312+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-stock-3, groupId=stock] Group coordinator 192.168.1.37:9092 (id: 2147483647 rack: null) is unavailable or invalid due to cause: null. isDisconnected: true. Rediscovery will be attempted.
+2024-07-23T10:08:20.312+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-stock-3, groupId=stock] Request joining group due to: rebalance failed due to 'null' (DisconnectException)
+2024-07-23T10:08:22.473+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node 0 disconnected.
+2024-07-23T10:08:22.473+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node 0 (/192.168.1.37:9092) could not be established. Broker may not be available.
+2024-07-23T10:08:24.673+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node 0 disconnected.
+2024-07-23T10:08:24.673+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node 0 (/192.168.1.37:9092) could not be established. Broker may not be available.
+2024-07-23T10:08:26.954+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node 0 disconnected.
+2024-07-23T10:08:26.954+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node 0 (/192.168.1.37:9092) could not be established. Broker may not be available.
+2024-07-23T10:08:29.427+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node 0 disconnected.
+2024-07-23T10:08:29.427+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node 0 (/192.168.1.37:9092) could not be established. Broker may not be available.
+2024-07-23T10:08:32.265+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node 0 disconnected.
+2024-07-23T10:08:32.265+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node 0 (/192.168.1.37:9092) could not be established. Broker may not be available.
+2024-07-23T10:08:35.299+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node 0 disconnected.
+2024-07-23T10:08:35.299+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node 0 (/192.168.1.37:9092) could not be established. Broker may not be available.
+2024-07-23T10:08:38.385+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node 0 disconnected.
+2024-07-23T10:08:38.385+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node 0 (/192.168.1.37:9092) could not be established. Broker may not be available.
+2024-07-23T10:08:41.686+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node 0 disconnected.
+2024-07-23T10:08:41.686+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node 0 (/192.168.1.37:9092) could not be established. Broker may not be available.
+2024-07-23T10:08:44.846+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node 0 disconnected.
+2024-07-23T10:08:44.846+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node 0 (/192.168.1.37:9092) could not be established. Broker may not be available.
+2024-07-23T10:08:47.935+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node 0 disconnected.
+2024-07-23T10:08:47.935+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node 0 (/192.168.1.37:9092) could not be established. Broker may not be available.
+2024-07-23T10:08:50.874+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node 0 disconnected.
+2024-07-23T10:08:50.874+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node 0 (/192.168.1.37:9092) could not be established. Broker may not be available.
+2024-07-23T10:08:54.031+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node 0 disconnected.
+2024-07-23T10:08:54.031+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node 0 (/192.168.1.37:9092) could not be established. Broker may not be available.
+2024-07-23T10:08:57.222+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node 0 disconnected.
+2024-07-23T10:08:57.222+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node 0 (/192.168.1.37:9092) could not be established. Broker may not be available.
+2024-07-23T10:09:00.247+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node 0 disconnected.
+2024-07-23T10:09:00.247+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node 0 (/192.168.1.37:9092) could not be established. Broker may not be available.
+2024-07-23T10:09:03.414+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node 0 disconnected.
+2024-07-23T10:09:03.414+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node 0 (/192.168.1.37:9092) could not be established. Broker may not be available.
+2024-07-23T10:09:06.666+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node 0 disconnected.
+2024-07-23T10:09:06.666+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node 0 (/192.168.1.37:9092) could not be established. Broker may not be available.
+2024-07-23T10:09:09.694+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node 0 disconnected.
+2024-07-23T10:09:09.694+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node 0 (/192.168.1.37:9092) could not be established. Broker may not be available.
+2024-07-23T10:09:12.699+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node 0 disconnected.
+2024-07-23T10:09:12.699+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node 0 (/192.168.1.37:9092) could not be established. Broker may not be available.
+2024-07-23T10:09:15.936+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node 0 disconnected.
+2024-07-23T10:09:15.936+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node 0 (/192.168.1.37:9092) could not be established. Broker may not be available.
+2024-07-23T10:09:18.831+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node 0 disconnected.
+2024-07-23T10:09:18.831+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node 0 (/192.168.1.37:9092) could not be established. Broker may not be available.
+2024-07-23T10:09:21.791+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node 0 disconnected.
+2024-07-23T10:09:21.791+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node 0 (/192.168.1.37:9092) could not be established. Broker may not be available.
+2024-07-23T10:09:24.760+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node 0 disconnected.
+2024-07-23T10:09:24.760+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node 0 (/192.168.1.37:9092) could not be established. Broker may not be available.
+2024-07-23T10:09:28.049+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node 0 disconnected.
+2024-07-23T10:09:28.049+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node 0 (/192.168.1.37:9092) could not be established. Broker may not be available.
+2024-07-23T10:09:31.136+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node 0 disconnected.
+2024-07-23T10:09:31.136+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node 0 (/192.168.1.37:9092) could not be established. Broker may not be available.
+2024-07-23T10:09:34.340+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Node 0 disconnected.
+2024-07-23T10:09:34.340+05:30  WARN 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-stock-3, groupId=stock] Connection to node 0 (/192.168.1.37:9092) could not be established. Broker may not be available.
+2024-07-23T10:09:36.227+05:30  INFO 22432 --- [stock-service] [RMI TCP Connection(35)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-07-23T10:09:36.255+05:30  INFO 22432 --- [stock-service] [RMI TCP Connection(35)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application STOCK-SERVICE with eureka with status DOWN
+2024-07-23T10:09:36.255+05:30  INFO 22432 --- [stock-service] [RMI TCP Connection(35)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1721709576255, current=DOWN, previous=UP]
+2024-07-23T10:09:36.256+05:30  INFO 22432 --- [stock-service] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STOCK-SERVICE/localhost:stock-service:8082: registering service...
+2024-07-23T10:09:36.277+05:30  INFO 22432 --- [stock-service] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STOCK-SERVICE/localhost:stock-service:8082 - registration status: 204
+2024-07-23T10:09:36.286+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-stock-3, groupId=stock] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-07-23T10:09:36.286+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-stock-3, groupId=stock] Request joining group due to: consumer pro-actively leaving the group
+2024-07-23T10:09:36.286+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] fkaConsumerFactory$ExtendedKafkaConsumer : [Consumer clientId=consumer-stock-3, groupId=stock] Unsubscribed all topics or patterns and assigned partitions
+2024-07-23T10:09:36.288+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-stock-3, groupId=stock] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-07-23T10:09:36.288+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-stock-3, groupId=stock] Request joining group due to: consumer pro-actively leaving the group
+2024-07-23T10:09:36.290+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-07-23T10:09:36.290+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-07-23T10:09:36.290+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-07-23T10:09:36.295+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-stock-3 unregistered
+2024-07-23T10:09:36.296+05:30  INFO 22432 --- [stock-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : stock: Consumer stopped
+2024-07-23T10:09:36.334+05:30  INFO 22432 --- [stock-service] [RMI TCP Connection(35)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-07-23T10:09:39.342+05:30  INFO 22432 --- [stock-service] [RMI TCP Connection(35)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-07-23T10:09:39.364+05:30  INFO 22432 --- [stock-service] [RMI TCP Connection(35)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STOCK-SERVICE/localhost:stock-service:8082 - deregister  status: 200
+2024-07-23T10:09:39.373+05:30  INFO 22432 --- [stock-service] [RMI TCP Connection(35)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient

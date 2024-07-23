@@ -1,0 +1,309 @@
+2024-07-23T10:07:38.352+05:30  INFO 24076 --- [email-service] [restartedMain] com.abc.email.EmailServiceApplication    : Starting EmailServiceApplication using Java 17.0.11 with PID 24076 (D:\trainings\wipro\batch2\stsworkspace3\email-service\target\classes started by DELL in D:\trainings\wipro\batch2\stsworkspace3\email-service)
+2024-07-23T10:07:38.352+05:30  INFO 24076 --- [email-service] [restartedMain] com.abc.email.EmailServiceApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-07-23T10:07:38.694+05:30  INFO 24076 --- [email-service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8e2e0868-e000-30c9-b00d-709165f33d74
+2024-07-23T10:07:38.709+05:30  WARN 24076 --- [email-service] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-07-23T10:07:38.712+05:30  WARN 24076 --- [email-service] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-07-23T10:07:38.793+05:30  INFO 24076 --- [email-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2024-07-23T10:07:38.795+05:30  INFO 24076 --- [email-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-23T10:07:38.795+05:30  INFO 24076 --- [email-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-23T10:07:38.835+05:30  INFO 24076 --- [email-service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-23T10:07:38.835+05:30  INFO 24076 --- [email-service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 479 ms
+2024-07-23T10:07:39.035+05:30  WARN 24076 --- [email-service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-07-23T10:07:40.282+05:30  INFO 24076 --- [email-service] [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2024-07-23T10:07:41.450+05:30  INFO 24076 --- [email-service] [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2024-07-23T10:07:41.460+05:30  INFO 24076 --- [email-service] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-07-23T10:07:41.472+05:30  WARN 24076 --- [email-service] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-07-23T10:07:41.494+05:30  INFO 24076 --- [email-service] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-07-23T10:07:41.497+05:30  INFO 24076 --- [email-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-07-23T10:07:41.498+05:30  INFO 24076 --- [email-service] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-07-23T10:07:41.500+05:30  INFO 24076 --- [email-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-07-23T10:07:41.500+05:30  INFO 24076 --- [email-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-07-23T10:07:41.500+05:30  INFO 24076 --- [email-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-07-23T10:07:41.500+05:30  INFO 24076 --- [email-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-07-23T10:07:41.500+05:30  INFO 24076 --- [email-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-07-23T10:07:41.500+05:30  INFO 24076 --- [email-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-07-23T10:07:41.500+05:30  INFO 24076 --- [email-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-07-23T10:07:41.558+05:30  INFO 24076 --- [email-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-07-23T10:07:41.559+05:30  INFO 24076 --- [email-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-07-23T10:07:41.560+05:30  INFO 24076 --- [email-service] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-07-23T10:07:41.563+05:30  INFO 24076 --- [email-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1721709461563 with initial instances count: 3
+2024-07-23T10:07:41.565+05:30  INFO 24076 --- [email-service] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EMAIL-SERVICE with eureka with status UP
+2024-07-23T10:07:41.565+05:30  INFO 24076 --- [email-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1721709461565, current=UP, previous=STARTING]
+2024-07-23T10:07:41.565+05:30  INFO 24076 --- [email-service] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMAIL-SERVICE/localhost:email-service:8083: registering service...
+2024-07-23T10:07:41.574+05:30  INFO 24076 --- [email-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path ''
+2024-07-23T10:07:41.575+05:30  INFO 24076 --- [email-service] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2024-07-23T10:07:41.588+05:30  INFO 24076 --- [email-service] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMAIL-SERVICE/localhost:email-service:8083 - registration status: 204
+2024-07-23T10:07:42.766+05:30  INFO 24076 --- [email-service] [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2024-07-23T10:07:42.770+05:30  INFO 24076 --- [email-service] [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-email-3
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = email
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2024-07-23T10:07:42.781+05:30  INFO 24076 --- [email-service] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.6.2
+2024-07-23T10:07:42.781+05:30  INFO 24076 --- [email-service] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c4deed513057c94e
+2024-07-23T10:07:42.781+05:30  INFO 24076 --- [email-service] [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1721709462780
+2024-07-23T10:07:42.781+05:30  INFO 24076 --- [email-service] [restartedMain] fkaConsumerFactory$ExtendedKafkaConsumer : [Consumer clientId=consumer-email-3, groupId=email] Subscribed to topic(s): order_topics
+2024-07-23T10:07:42.783+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node -1 disconnected.
+2024-07-23T10:07:42.783+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:07:42.783+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:07:42.788+05:30  INFO 24076 --- [email-service] [restartedMain] com.abc.email.EmailServiceApplication    : Started EmailServiceApplication in 5.677 seconds (process running for 930.147)
+2024-07-23T10:07:42.790+05:30  INFO 24076 --- [email-service] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-07-23T10:07:42.887+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node -1 disconnected.
+2024-07-23T10:07:42.887+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:07:42.887+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:07:42.995+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node -1 disconnected.
+2024-07-23T10:07:42.996+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:07:42.996+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:07:43.227+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node -1 disconnected.
+2024-07-23T10:07:43.228+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:07:43.228+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:07:43.649+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node -1 disconnected.
+2024-07-23T10:07:43.649+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:07:43.649+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:07:44.444+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node -1 disconnected.
+2024-07-23T10:07:44.445+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:07:44.445+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:07:45.549+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node -1 disconnected.
+2024-07-23T10:07:45.549+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:07:45.549+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:07:46.780+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node -1 disconnected.
+2024-07-23T10:07:46.780+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:07:46.780+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:07:47.657+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node -1 disconnected.
+2024-07-23T10:07:47.657+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:07:47.657+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:07:48.601+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node -1 disconnected.
+2024-07-23T10:07:48.601+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:07:48.601+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:07:49.459+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node -1 disconnected.
+2024-07-23T10:07:49.460+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:07:49.460+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:07:50.438+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node -1 disconnected.
+2024-07-23T10:07:50.439+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:07:50.439+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:07:51.622+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node -1 disconnected.
+2024-07-23T10:07:51.622+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:07:51.622+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:07:52.666+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node -1 disconnected.
+2024-07-23T10:07:52.667+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:07:52.667+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:07:53.677+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node -1 disconnected.
+2024-07-23T10:07:53.677+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:07:53.678+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:07:54.846+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node -1 disconnected.
+2024-07-23T10:07:54.846+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:07:54.846+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:07:55.765+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node -1 disconnected.
+2024-07-23T10:07:55.765+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:07:55.765+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:07:56.680+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node -1 disconnected.
+2024-07-23T10:07:56.680+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:07:56.680+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:07:57.541+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node -1 disconnected.
+2024-07-23T10:07:57.541+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:07:57.541+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:07:58.506+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node -1 disconnected.
+2024-07-23T10:07:58.506+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:07:58.506+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:07:59.361+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node -1 disconnected.
+2024-07-23T10:07:59.570+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:07:59.570+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:08:00.243+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node -1 disconnected.
+2024-07-23T10:08:00.244+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:08:00.244+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:08:01.229+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node -1 disconnected.
+2024-07-23T10:08:01.229+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:08:01.229+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:08:02.337+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node -1 disconnected.
+2024-07-23T10:08:02.337+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:08:02.337+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:08:03.320+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node -1 disconnected.
+2024-07-23T10:08:03.320+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:08:03.320+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:08:04.560+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node -1 disconnected.
+2024-07-23T10:08:04.560+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:08:04.561+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:08:05.611+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node -1 disconnected.
+2024-07-23T10:08:05.611+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-23T10:08:05.611+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-23T10:08:06.799+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Error while fetching metadata with correlation id 2 : {order_topics=UNKNOWN_TOPIC_OR_PARTITION}
+2024-07-23T10:08:06.799+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-email-3, groupId=email] Cluster ID: XrR8YNZ1R_2wZmgLQo900w
+2024-07-23T10:08:06.917+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Error while fetching metadata with correlation id 5 : {order_topics=UNKNOWN_TOPIC_OR_PARTITION}
+2024-07-23T10:08:07.049+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-email-3, groupId=email] Discovered group coordinator 192.168.1.37:9092 (id: 2147483647 rack: null)
+2024-07-23T10:08:07.050+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-email-3, groupId=email] (Re-)joining group
+2024-07-23T10:08:07.074+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-email-3, groupId=email] Group coordinator 192.168.1.37:9092 (id: 2147483647 rack: null) is unavailable or invalid due to cause: error response NOT_COORDINATOR. isDisconnected: false. Rediscovery will be attempted.
+2024-07-23T10:08:07.075+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-email-3, groupId=email] Requesting disconnect from last known coordinator 192.168.1.37:9092 (id: 2147483647 rack: null)
+2024-07-23T10:08:07.075+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-email-3, groupId=email] JoinGroup failed: This is not the correct coordinator. Marking coordinator unknown. Sent generation was Generation{generationId=-1, memberId='', protocol='null'}
+2024-07-23T10:08:07.075+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Client requested disconnect from node 2147483647
+2024-07-23T10:08:07.079+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-email-3, groupId=email] Discovered group coordinator 192.168.1.37:9092 (id: 2147483647 rack: null)
+2024-07-23T10:08:07.079+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-email-3, groupId=email] Group coordinator 192.168.1.37:9092 (id: 2147483647 rack: null) is unavailable or invalid due to cause: coordinator unavailable. isDisconnected: false. Rediscovery will be attempted.
+2024-07-23T10:08:07.079+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-email-3, groupId=email] Requesting disconnect from last known coordinator 192.168.1.37:9092 (id: 2147483647 rack: null)
+2024-07-23T10:08:07.195+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-email-3, groupId=email] Discovered group coordinator 192.168.1.37:9092 (id: 2147483647 rack: null)
+2024-07-23T10:08:07.196+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-email-3, groupId=email] Request joining group due to: rebalance failed due to 'This is not the correct coordinator.' (NotCoordinatorException)
+2024-07-23T10:08:07.197+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-email-3, groupId=email] (Re-)joining group
+2024-07-23T10:08:07.203+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-email-3, groupId=email] Request joining group due to: need to re-join with the given member-id: consumer-email-3-2ca96513-87c2-4fad-be30-a46d8f249143
+2024-07-23T10:08:07.203+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-email-3, groupId=email] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2024-07-23T10:08:07.203+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-email-3, groupId=email] (Re-)joining group
+2024-07-23T10:08:20.310+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node -1 disconnected.
+2024-07-23T10:08:20.312+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node 0 disconnected.
+2024-07-23T10:08:20.312+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Cancelled in-flight METADATA request with correlation id 16 due to node 0 being disconnected (elapsed time since creation: 0ms, elapsed time since send: 0ms, request timeout: 30000ms)
+2024-07-23T10:08:20.313+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node 2147483647 disconnected.
+2024-07-23T10:08:20.313+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Cancelled in-flight JOIN_GROUP request with correlation id 15 due to node 2147483647 being disconnected (elapsed time since creation: 13109ms, elapsed time since send: 13109ms, request timeout: 305000ms)
+2024-07-23T10:08:20.313+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-email-3, groupId=email] Group coordinator 192.168.1.37:9092 (id: 2147483647 rack: null) is unavailable or invalid due to cause: null. isDisconnected: true. Rediscovery will be attempted.
+2024-07-23T10:08:20.313+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-email-3, groupId=email] Request joining group due to: rebalance failed due to 'null' (DisconnectException)
+2024-07-23T10:08:22.473+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node 0 disconnected.
+2024-07-23T10:08:22.473+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node 0 (/192.168.1.37:9092) could not be established. Broker may not be available.
+2024-07-23T10:08:24.627+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node 0 disconnected.
+2024-07-23T10:08:24.627+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node 0 (/192.168.1.37:9092) could not be established. Broker may not be available.
+2024-07-23T10:08:26.907+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node 0 disconnected.
+2024-07-23T10:08:26.907+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node 0 (/192.168.1.37:9092) could not be established. Broker may not be available.
+2024-07-23T10:08:29.381+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node 0 disconnected.
+2024-07-23T10:08:29.381+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node 0 (/192.168.1.37:9092) could not be established. Broker may not be available.
+2024-07-23T10:08:32.342+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node 0 disconnected.
+2024-07-23T10:08:32.342+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node 0 (/192.168.1.37:9092) could not be established. Broker may not be available.
+2024-07-23T10:08:35.547+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node 0 disconnected.
+2024-07-23T10:08:35.547+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node 0 (/192.168.1.37:9092) could not be established. Broker may not be available.
+2024-07-23T10:08:38.760+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node 0 disconnected.
+2024-07-23T10:08:38.761+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node 0 (/192.168.1.37:9092) could not be established. Broker may not be available.
+2024-07-23T10:08:41.841+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node 0 disconnected.
+2024-07-23T10:08:41.841+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node 0 (/192.168.1.37:9092) could not be established. Broker may not be available.
+2024-07-23T10:08:44.753+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node 0 disconnected.
+2024-07-23T10:08:44.753+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node 0 (/192.168.1.37:9092) could not be established. Broker may not be available.
+2024-07-23T10:08:47.904+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node 0 disconnected.
+2024-07-23T10:08:47.904+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node 0 (/192.168.1.37:9092) could not be established. Broker may not be available.
+2024-07-23T10:08:50.796+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node 0 disconnected.
+2024-07-23T10:08:50.796+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node 0 (/192.168.1.37:9092) could not be established. Broker may not be available.
+2024-07-23T10:08:53.829+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node 0 disconnected.
+2024-07-23T10:08:53.830+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node 0 (/192.168.1.37:9092) could not be established. Broker may not be available.
+2024-07-23T10:08:57.033+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node 0 disconnected.
+2024-07-23T10:08:57.033+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node 0 (/192.168.1.37:9092) could not be established. Broker may not be available.
+2024-07-23T10:09:00.324+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node 0 disconnected.
+2024-07-23T10:09:00.324+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node 0 (/192.168.1.37:9092) could not be established. Broker may not be available.
+2024-07-23T10:09:03.228+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node 0 disconnected.
+2024-07-23T10:09:03.228+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node 0 (/192.168.1.37:9092) could not be established. Broker may not be available.
+2024-07-23T10:09:06.138+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node 0 disconnected.
+2024-07-23T10:09:06.138+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node 0 (/192.168.1.37:9092) could not be established. Broker may not be available.
+2024-07-23T10:09:09.114+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node 0 disconnected.
+2024-07-23T10:09:09.114+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node 0 (/192.168.1.37:9092) could not be established. Broker may not be available.
+2024-07-23T10:09:12.326+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node 0 disconnected.
+2024-07-23T10:09:12.326+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node 0 (/192.168.1.37:9092) could not be established. Broker may not be available.
+2024-07-23T10:09:15.592+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node 0 disconnected.
+2024-07-23T10:09:15.592+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node 0 (/192.168.1.37:9092) could not be established. Broker may not be available.
+2024-07-23T10:09:18.782+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node 0 disconnected.
+2024-07-23T10:09:18.782+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node 0 (/192.168.1.37:9092) could not be established. Broker may not be available.
+2024-07-23T10:09:21.729+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node 0 disconnected.
+2024-07-23T10:09:21.729+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node 0 (/192.168.1.37:9092) could not be established. Broker may not be available.
+2024-07-23T10:09:24.760+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node 0 disconnected.
+2024-07-23T10:09:24.760+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node 0 (/192.168.1.37:9092) could not be established. Broker may not be available.
+2024-07-23T10:09:27.906+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node 0 disconnected.
+2024-07-23T10:09:27.906+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node 0 (/192.168.1.37:9092) could not be established. Broker may not be available.
+2024-07-23T10:09:31.170+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Node 0 disconnected.
+2024-07-23T10:09:31.170+05:30  WARN 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-email-3, groupId=email] Connection to node 0 (/192.168.1.37:9092) could not be established. Broker may not be available.
+2024-07-23T10:09:33.964+05:30  INFO 24076 --- [email-service] [RMI TCP Connection(33)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-07-23T10:09:33.985+05:30  INFO 24076 --- [email-service] [RMI TCP Connection(33)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application EMAIL-SERVICE with eureka with status DOWN
+2024-07-23T10:09:33.986+05:30  INFO 24076 --- [email-service] [RMI TCP Connection(33)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1721709573986, current=DOWN, previous=UP]
+2024-07-23T10:09:33.987+05:30  INFO 24076 --- [email-service] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMAIL-SERVICE/localhost:email-service:8083: registering service...
+2024-07-23T10:09:34.016+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-email-3, groupId=email] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-07-23T10:09:34.017+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-email-3, groupId=email] Request joining group due to: consumer pro-actively leaving the group
+2024-07-23T10:09:34.017+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] fkaConsumerFactory$ExtendedKafkaConsumer : [Consumer clientId=consumer-email-3, groupId=email] Unsubscribed all topics or patterns and assigned partitions
+2024-07-23T10:09:34.022+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-email-3, groupId=email] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-07-23T10:09:34.023+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-email-3, groupId=email] Request joining group due to: consumer pro-actively leaving the group
+2024-07-23T10:09:34.026+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-07-23T10:09:34.026+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-07-23T10:09:34.026+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-07-23T10:09:34.029+05:30  INFO 24076 --- [email-service] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMAIL-SERVICE/localhost:email-service:8083 - registration status: 204
+2024-07-23T10:09:34.056+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-email-3 unregistered
+2024-07-23T10:09:34.058+05:30  INFO 24076 --- [email-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : email: Consumer stopped
+2024-07-23T10:09:34.109+05:30  INFO 24076 --- [email-service] [RMI TCP Connection(33)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-07-23T10:09:37.116+05:30  INFO 24076 --- [email-service] [RMI TCP Connection(33)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-07-23T10:09:37.129+05:30  INFO 24076 --- [email-service] [RMI TCP Connection(33)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMAIL-SERVICE/localhost:email-service:8083 - deregister  status: 200
+2024-07-23T10:09:37.134+05:30  INFO 24076 --- [email-service] [RMI TCP Connection(33)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
