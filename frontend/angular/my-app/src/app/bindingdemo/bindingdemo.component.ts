@@ -13,4 +13,16 @@ export class BindingdemoComponent {
     imgPath:string = '/assets/images/img1.jpg'
     // color : string = 'pink'
     status : string = 'success'
+
+    myCustomer:Customer = {
+      customerId : 100,
+      customerName : 'raj kumar',
+      customerAge : 25
+    }
+}
+
+interface Customer {
+  customerId : number,
+  customerName : string,
+  customerAge : number
 }
