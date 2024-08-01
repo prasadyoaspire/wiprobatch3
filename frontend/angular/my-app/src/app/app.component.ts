@@ -7,6 +7,8 @@ import { EventbindingComponent } from './eventbinding/eventbinding.component';
 import { TwowaybidingComponent } from './twowaybiding/twowaybiding.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { CommonModule } from '@angular/common';
+import { ParentComponent } from './parent/parent.component';
+import { ItemMainComponent } from './item-main/item-main.component';
 
 
 @Component({
@@ -18,7 +20,9 @@ import { CommonModule } from '@angular/common';
     BindingdemoComponent,
     EventbindingComponent,
     TwowaybidingComponent,
-    DirectivesComponent],
+    DirectivesComponent,
+  ParentComponent,
+ItemMainComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

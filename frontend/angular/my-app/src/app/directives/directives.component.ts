@@ -10,6 +10,8 @@ import { Component } from '@angular/core';
 })
 export class DirectivesComponent {
 
+  isLoggedIn:boolean = false;
+
   title: string = "Courses";
 
   courses:string[] = ["java", "sql",'hibernate', 'git','spring'];

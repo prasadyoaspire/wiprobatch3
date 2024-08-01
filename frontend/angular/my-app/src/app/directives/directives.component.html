@@ -1,6 +1,23 @@
 <h3>Directives Demo</h3>
 
-<h4>Title: {{title}}</h4>
+<h4>If-else Demo</h4>
+
+<p *ngIf="isLoggedIn; else elseBlock">
+    <button>Logout</button>
+</p>
+
+<ng-template #elseBlock>
+    <button>Login</button>
+</ng-template>
+
+<!-- @if(isLoggedIn) {
+    <button>Logout</button>
+}
+@else {
+    <button>Login</button>
+} -->
+
+<h4>For Demo</h4>
 
 <p *ngFor="let c of courses">
     {{c}}
@@ -10,23 +27,23 @@
 
 <table>
     <thead>
-        <div>
-            <tr>
-                <th>ProductId</th>
-                <th>Name</th>
-                <th>Price</th>
-                <th>Category</th>
-            </tr>
-        </div>
+        <tr>
+            <th>ProductId</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Category</th>
+        </tr>
     </thead>
     <tbody>
-        <div *ngFor="let p of products">
-            <tr>
-                <td>{{p.productId}}</td>
-                <td>{{p.productName}}</td>
-                <td>{{p.productPrice}}</td>
-                <td>{{p.category}}</td>
-            </tr>
-        </div>
+        <!-- <div *ngFor="let p of products"> -->
+        @for (p of products; track p.productName) {
+        <tr>
+            <td>{{p.productId}}</td>
+            <td>{{p.productName}}</td>
+            <td>{{p.productPrice}}</td>
+            <td>{{p.category}}</td>
+        </tr>
+        }
+        <!-- </div> -->
     </tbody>
 </table>
