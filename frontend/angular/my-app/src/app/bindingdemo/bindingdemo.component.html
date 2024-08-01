@@ -10,7 +10,8 @@
 
 <button [style.color] = "status == 'error' ? 'red' : 'green'">Submit</button>
 
-<h1>Customer Details</h1>
+<h1 [ngStyle] = "styleClass">Customer Details</h1>
+
 <p>Id : {{myCustomer.customerId}}</p>
 <p>Name : {{myCustomer.customerName}}</p>
 <p>Age : {{myCustomer.customerAge}}</p>

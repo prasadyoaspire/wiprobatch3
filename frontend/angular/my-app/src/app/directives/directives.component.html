@@ -1,0 +1,32 @@
+<h3>Directives Demo</h3>
+
+<h4>Title: {{title}}</h4>
+
+<p *ngFor="let c of courses">
+    {{c}}
+</p>
+
+<h4>List of Products</h4>
+
+<table>
+    <thead>
+        <div>
+            <tr>
+                <th>ProductId</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Category</th>
+            </tr>
+        </div>
+    </thead>
+    <tbody>
+        <div *ngFor="let p of products">
+            <tr>
+                <td>{{p.productId}}</td>
+                <td>{{p.productName}}</td>
+                <td>{{p.productPrice}}</td>
+                <td>{{p.category}}</td>
+            </tr>
+        </div>
+    </tbody>
+</table>
