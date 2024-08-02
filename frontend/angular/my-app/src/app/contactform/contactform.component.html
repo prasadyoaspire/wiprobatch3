@@ -1,0 +1,22 @@
+<h2>Contact Form</h2>
+
+<form [formGroup]="profileForm" (ngSubmit)="createProfile()">
+    <div>
+        <label>FirstName</label>
+        <input type="text" formControlName="firstName"/>
+    </div>
+    <div>
+        <label>LastName</label>
+        <input type="text" formControlName="lastName"/>
+    </div>
+    <div>
+        <label>Email</label>
+        <input type="email" formControlName="email"/>
+    </div>
+    <div>
+        <label>Gender</label>
+        <input type="radio" name="gender" value="male"  formControlName="gender"/>M
+        <input type="radio" name="gender" value="female" formControlName="gender"/>F
+    </div>
+    <input type="submit" value="submit"/>
+</form>

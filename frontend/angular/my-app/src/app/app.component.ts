@@ -9,20 +9,24 @@ import { DirectivesComponent } from './directives/directives.component';
 import { CommonModule } from '@angular/common';
 import { ParentComponent } from './parent/parent.component';
 import { ItemMainComponent } from './item-main/item-main.component';
+import { RegistrationFormComponent } from './registration-form/registration-form.component';
+import { ContactformComponent } from './contactform/contactform.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [   
+  imports: [
     TestComponent,
     DemoComponent,
     BindingdemoComponent,
     EventbindingComponent,
     TwowaybidingComponent,
     DirectivesComponent,
-  ParentComponent,
-ItemMainComponent],
+    ParentComponent,
+    ItemMainComponent,
+    RegistrationFormComponent,
+    ContactformComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
