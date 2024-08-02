@@ -10,17 +10,9 @@ import { FormsModule } from '@angular/forms';
 })
 export class RegistrationFormComponent {
 
-  firstName:string = '';
-  lastName:string = '';
-  email:string = '';
-  age : number = 0;
-
   doRegistration(registrationForm:any) {
     console.log(registrationForm.value);
-    this.firstName = registrationForm.value.fname;
-    this.lastName = registrationForm.value.lname;
-    this.email = registrationForm.value.email;
-    this.age = registrationForm.value.age;
+   
 
     //call api to save this data
    // customerService.addnewCustomer(registrationForm.value);

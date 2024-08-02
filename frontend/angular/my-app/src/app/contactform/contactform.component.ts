@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-contactform',
@@ -12,19 +12,24 @@ import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 export class ContactformComponent {
 
   profileForm = new FormGroup({
-    firstName : new FormControl(''),
-    lastName : new FormControl(''),
+    firstName : new FormControl('',[Validators.required,Validators.minLength(5)]),
+    lastName : new FormControl('',Validators.required),
     email : new FormControl(''),
     gender : new FormControl('')
   }
   );
 
   createProfile() {
-    console.log(this.profileForm.value);
+    if (this.profileForm.valid) {
+      console.log('Form submitted:', this.profileForm.value);
+    }   
+  }
 
-    // console.log(this.profileForm.value.firstName);
-    // console.log(this.profileForm.value.lastName);
-    // console.log(this.profileForm.value.email);
-    // console.log(this.profileForm.value.gender);
+  get firstName() {
+    return this.profileForm.get('firstName');
+  }
+
+  get lastName() {
+    return this.profileForm.get('lastName');
   }
 }
