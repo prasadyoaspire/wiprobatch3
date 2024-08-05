@@ -25,4 +25,11 @@ export class ProductService {
     headers.set('content-type', 'application/json');
     return this.http.post(this.baseUrl + "/product/", product, { headers: headers });
   }
+
+  updateProduct(product: Product): Observable<any> {
+    const headers = new HttpHeaders();
+    headers.set('content-type', 'application/json');
+    return this.http.put(this.baseUrl + "/product/", product, { headers: headers });
+  }
+  
 }

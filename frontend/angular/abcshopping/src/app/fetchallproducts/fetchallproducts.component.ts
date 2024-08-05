@@ -21,6 +21,6 @@ export class FetchallproductsComponent {
 
    ngOnInit() {
     console.log("inside fetchallproducts");
-    this.productService.getAllProducts().subscribe(data=> this.products = data);
+    this.productService.getAllProducts().subscribe((data)=> this.products = data);
    }
 }
