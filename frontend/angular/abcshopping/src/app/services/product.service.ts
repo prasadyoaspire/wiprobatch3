@@ -16,7 +16,11 @@ export class ProductService {
     return this.http.get<Product>(this.baseUrl + "/product/");
   }
 
-  addNewProduct(product: any): any {
+  getProductDetails(id:number): Observable<Product> {
+    return this.http.get<Product>(this.baseUrl + "/product/"+id);
+  }
+
+  addNewProduct(product: Product): Observable<any> {
     const headers = new HttpHeaders();
     headers.set('content-type', 'application/json');
     return this.http.post(this.baseUrl + "/product/", product, { headers: headers });
