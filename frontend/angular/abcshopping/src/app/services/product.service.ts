@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Product } from '../model/Product';
@@ -8,9 +8,17 @@ import { Product } from '../model/Product';
 })
 export class ProductService {
 
-  constructor(private http:HttpClient) { }
+  baseUrl: string = "http://localhost:8081"
 
-  getAllProducts():Observable<Product> {
-   return this.http.get<Product>("http://localhost:8081/product/");
+  constructor(private http: HttpClient) { }
+
+  getAllProducts(): Observable<Product> {
+    return this.http.get<Product>(this.baseUrl + "/product/");
+  }
+
+  addNewProduct(product: any): any {
+    const headers = new HttpHeaders();
+    headers.set('content-type', 'application/json');
+    return this.http.post(this.baseUrl + "/product/", product, { headers: headers });
   }
 }

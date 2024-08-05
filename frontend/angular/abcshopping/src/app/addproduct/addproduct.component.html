@@ -1,1 +1,21 @@
 <h3>Add New Product</h3>
+
+<form #addProductForm="ngForm" (ngSubmit)="saveProduct(addProductForm)">
+    <div>
+        <label>Product Name</label>
+        <input type="text" name="productName" ngModel/>
+    </div>
+    <div>
+        <label>Product Price</label>
+        <input type="text" name="productPrice" ngModel/>
+    </div>
+    <div>
+        <label>MFD</label>
+        <input type="date" name="mfd" ngModel/>
+    </div>
+    <div>
+        <label>Category</label>
+        <input type="text" name="category" ngModel/>
+    </div>
+    <input type="submit" value="Add Product"/>
+</form>
