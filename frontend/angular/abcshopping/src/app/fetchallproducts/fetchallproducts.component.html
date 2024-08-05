@@ -1,0 +1,8 @@
+<h2>Product List</h2> 
+
+<!-- <button (click) = "fetchAllProducts()">Click Here To Fetch Products</button> -->
+
+<div *ngFor="let product of products">
+<p>{{product.id}} {{product.productName}} {{product.productPrice}} {{product.mfd}} {{product.category}}</p>
+
+</div>
