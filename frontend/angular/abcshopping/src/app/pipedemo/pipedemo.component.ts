@@ -1,11 +1,13 @@
 import { CurrencyPipe, DatePipe, LowerCasePipe, PercentPipe, TitleCasePipe, UpperCasePipe } from '@angular/common';
 import { Component } from '@angular/core';
 import { GreetPipe } from '../pipes/greet.pipe';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 @Component({
   selector: 'app-pipedemo',
   standalone: true,
   imports: [
+    MatSlideToggleModule,
     UpperCasePipe, 
     LowerCasePipe, 
     TitleCasePipe, 
