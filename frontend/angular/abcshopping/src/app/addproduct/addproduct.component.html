@@ -1,5 +1,32 @@
 <h3>Add New Product</h3>
 
+<form class="product-form" #addProductForm="ngForm" (ngSubmit)="saveProduct(addProductForm)">
+
+    <mat-form-field class="productform-full-width">
+        <mat-label>Product Name</mat-label>
+        <input matInput placeholder="Enter Product Name" name="productName" ngModel>
+    </mat-form-field>
+
+    <mat-form-field class="productform-full-width">
+        <mat-label>Product Price</mat-label>
+        <input type="number" matInput placeholder="Enter Product Price" name="productPrice" ngModel>
+    </mat-form-field>
+
+    <mat-form-field class="productform-full-width">
+        <mat-label>MFD</mat-label>
+        <input type="date" matInput placeholder="Enter Date" name="mfd" ngModel>
+    </mat-form-field>
+
+    <mat-form-field class="productform-full-width">
+        <mat-label>Category</mat-label>
+        <input type="text" matInput placeholder="Enter Category" name="category" ngModel>
+    </mat-form-field>
+
+    <input type="submit"  mat-button value="Add Product"/>
+
+</form>
+
+<!-- 
 <form #addProductForm="ngForm" (ngSubmit)="saveProduct(addProductForm)">
     <div>
         <label>Product Name</label>
@@ -18,4 +45,4 @@
         <input type="text" name="category" ngModel/>
     </div>
     <input type="submit" value="Add Product"/>
-</form>
+</form> -->
