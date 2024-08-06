@@ -3,7 +3,7 @@ import { ProductService } from '../services/product.service';
 import { Product } from '../model/Product';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
-import { MatTableModule } from '@angular/material/table';
+import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 
 
 @Component({
@@ -17,7 +17,8 @@ export class FetchallproductsComponent {
 
    products:any
 
-   displayedColumns: string[] = ['id', 'productName', 'productPrice'];
+   displayedColumns: string[] = ['id', 'productName', 'productPrice',"view", "edit", "delete"];
+ 
 
    constructor(private productService:ProductService) {
    }
