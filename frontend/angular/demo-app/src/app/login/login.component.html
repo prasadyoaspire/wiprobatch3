@@ -1,0 +1,13 @@
+<h3>SignIn Form</h3>
+<form [formGroup]="loginForm" (ngSubmit)="doLogin()">
+    <div>
+        <label>Email</label>
+        <input type="email" name="email" id="email" formControlName="email"/>
+    </div>
+    <div>
+        <label>Password</label>
+        <input type="text" name="pwd" id="pwd" formControlName="pwd"/>
+    </div>
+    <input type="submit" />
+</form>
+<p>{{loginErrorMsg}}</p>
