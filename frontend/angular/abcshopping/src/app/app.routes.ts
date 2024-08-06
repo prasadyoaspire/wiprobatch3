@@ -4,6 +4,7 @@ import { FetchallproductsComponent } from './fetchallproducts/fetchallproducts.c
 import { HomeComponent } from './home/home.component';
 import { FetchproductComponent } from './fetchproduct/fetchproduct.component';
 import { EditproductComponent } from './editproduct/editproduct.component';
+import { PipedemoComponent } from './pipedemo/pipedemo.component';
 
 export const routes: Routes = [
     { path : '', component: HomeComponent},
@@ -11,4 +12,5 @@ export const routes: Routes = [
     { path : 'product/all', component: FetchallproductsComponent},
     { path : 'product/get/:pid', component: FetchproductComponent},
     { path : 'product/edit/:pid', component: EditproductComponent},
+    { path : 'pipedemos', component: PipedemoComponent},
 ];
