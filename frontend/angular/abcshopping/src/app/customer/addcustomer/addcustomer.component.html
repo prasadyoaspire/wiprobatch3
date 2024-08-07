@@ -1,1 +1,58 @@
-<p>addcustomer works!</p>
+<form #customerForm="ngForm" (ngSubmit)="onSubmit()" novalidate>
+    <div>
+        <label>Customer Name</label>
+        <input type="text" name="customerName" 
+        [(ngModel)]="customer.customerName" required minlength="4" #cName="ngModel" />
+        
+        <div *ngIf="cName.invalid && (cName.dirty || cName.touched)">
+            <div *ngIf="cName.hasError('required')">
+                CustomerName is required.
+            </div>
+            <div *ngIf="cName.hasError('minlength')">
+                CustomerName must be at least 4 characters long.
+            </div>
+        </div>
+       
+    </div>
+    <div>
+        <label>Email</label>
+        <input type="email" name="email" [(ngModel)]="customer.email" 
+        required email #email = "ngModel" />
+       <div *ngIf="email.invalid && (email.dirty || email.touched)">
+
+        <div *ngIf="email.hasError('required')">
+            Email is required.
+        </div>
+        <div *ngIf="email.hasError('email')">
+            Email is not valid
+        </div>
+
+       </div>
+    </div>
+    <div>
+        <label>DOB</label>
+        <input type="date" name="dob" [(ngModel)]="customer.dob" />
+    </div>
+    <div>
+        <label>Mobile</label>
+        <input type="text" name="mobile" [(ngModel)]="customer.mobile" 
+        required pattern="^[0-9]{10}$" #mobile="ngModel"/>
+
+        <div *ngIf="mobile.invalid && (mobile.dirty || mobile.touched)">
+
+            <div *ngIf="mobile.hasError('required')">
+                Mobile is required.
+            </div>
+            <div *ngIf="mobile.hasError('pattern')">
+                Mobile number is not valid
+            </div>
+    
+           </div>
+
+    </div>
+    <div>
+        <label>City</label>
+        <input type="text" name="city" [(ngModel)]="customer.city" />
+    </div>
+    <input type="submit" value="Register" [disabled]="!customerForm.valid" />
+</form>
