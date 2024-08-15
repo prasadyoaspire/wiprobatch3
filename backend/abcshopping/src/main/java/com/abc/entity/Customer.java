@@ -5,30 +5,31 @@ import java.util.Set;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
+import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 
-@Data
+@Setter
+@Getter
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-//@Table(name="customer_tbl")
-public class Customer {
+@Table(name="customer_tbl")
+public class Customer extends User {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id;	
-	@Column(name="customer_name")	
-	private String customerName;
+	@Column(name="first_name")	
+	private String firstName;	
+	
+	@Column(name="last_name")	
+	private String lastName;
+	
 	private LocalDate dob;
 	private String mobile;
-	private String email;
+	
 	private String city;
 	
 	@OneToMany(mappedBy = "customer")

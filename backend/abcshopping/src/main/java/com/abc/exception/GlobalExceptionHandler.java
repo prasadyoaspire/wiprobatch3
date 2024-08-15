@@ -15,4 +15,12 @@ public class GlobalExceptionHandler {
 		
 		return new ResponseEntity<>(errorResponse,HttpStatus.NOT_FOUND);
 	}
+	
+	@ExceptionHandler(InvalidLoginException.class)
+	public ResponseEntity<ErrorResponse> hanldeInvalidLoginException(Exception e) {
+		
+		ErrorResponse errorResponse = new ErrorResponse(e.getMessage(),HttpStatus.UNAUTHORIZED.value());
+		
+		return new ResponseEntity<>(errorResponse,HttpStatus.UNAUTHORIZED);
+	}
 }
